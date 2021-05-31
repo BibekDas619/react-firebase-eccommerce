@@ -4,7 +4,7 @@ import CollectionOverview from '../../components/collections-overview/collection
 import CollectionPage from '../Collection/collection.component'
 const ShopPage = ({ match }) => {
 
-    console.log(match)
+
     return (
 
         <div className='shop-page'>
