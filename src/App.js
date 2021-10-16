@@ -19,8 +19,8 @@ class App extends Component {
 
   unsubscribeFromAuth = null
   componentDidMount() {
-    const { setCurrentUser, collectionsArray } = this.props
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+    const { setCurrentUser } = this.props
+    /* this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth)
         userRef.onSnapshot(snapShot => {
@@ -30,13 +30,11 @@ class App extends Component {
           })
 
         })
-          //addCollectionAndDocuments('collections', collectionsArray.map(({title,items}) => ({title,items})))
       }
       else {
         setCurrentUser(userAuth)
-        //addCollectionAndDocuments('collections', collectionsArray.map(({title,items}) => ({title,items})))
       }
-    })
+    }) */
   }
 
   componentWillUnmount() {
